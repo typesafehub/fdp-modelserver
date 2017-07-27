@@ -55,8 +55,8 @@ classes - Java and Scala
 Not included in this project are:
 
 -**Beam implementation** - Beam Flink runner is still on Scala 2.10 so it is in its own
-separate project - ???
+separate project - https://github.com/typesafehub/fdp-beam-modelServer
 
 -**Python/Tensorflow/Keras** - is it is a Python so it is in its own
-separate project - ???
+separate project - https://github.com/typesafehub/fdp-tensorflow-python-examples
       
