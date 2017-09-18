@@ -20,10 +20,7 @@ class ModelTypeSerializer extends TypeSerializer[Option[Model]] {
   override def duplicate(): TypeSerializer[Option[Model]] = new ModelTypeSerializer
 
   override def ensureCompatibility(configSnapshot: TypeSerializerConfigSnapshot): CompatibilityResult[Option[Model]] =
-    configSnapshot match{
-      case _ : ModelSerializerConfigSnapshot[Model] => CompatibilityResult.compatible()
-      case _ => CompatibilityResult.requiresMigration()
-    }
+    CompatibilityResult.requiresMigration()
 
   override def serialize(record: Option[Model], target: DataOutputView): Unit = {
     record match {

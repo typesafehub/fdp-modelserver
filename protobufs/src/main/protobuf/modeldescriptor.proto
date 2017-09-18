@@ -14,7 +14,8 @@ message ModelDescriptor {
     // Model type
     enum ModelType {
         TENSORFLOW  = 0;
-        PMML        = 1;
+        TENSORFLOWSAVED  = 1;
+        PMML        = 2;
     };
     ModelType modeltype = 4;
     oneof MessageContent {
